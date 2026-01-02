@@ -18,11 +18,12 @@
   -moz-osx-font-smoothing: grayscale;
 
   --link-underline-padding: .5em;
-  --personal-photo-dimensions: 40vw;
+  --personal-photo-dimensions: 38vw;
 }
 
 body {
   margin: 0;
+  padding: 0;
   display: flex;
   place-items: center;
   justify-content: center;
@@ -94,11 +95,6 @@ h2 {
   width: calc(100% + var(--link-underline-padding) * 2);
 }
 
-.home{
-  width: 100vw;
-  margin-top: -3em;
-}
-
 .presentation{
   width: 100%;
   display: flex;
@@ -142,7 +138,7 @@ h2 {
 
 .presentation img{
   width: var(--personal-photo-dimensions);
-  height: calc(var(--personal-photo-dimensions) - 4vw);
+  height: calc(var(--personal-photo-dimensions) - 7vw);
   justify-self: end;
 }
 
@@ -180,4 +176,24 @@ h2 {
 
 .info-buttons .contact-me-btn:hover{
   background-color: rgb(255, 189, 68)
+}
+
+.skills-list{
+  font-family: sans-serif;
+  width: 100vw;
+  background-color: rgb(26, 41, 54);
+  height: 4em;
+  display: flex;
+  align-items: center;
+}
+
+.skills-list ul{
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 0;
+  list-style: none;
+  color: rgb(85, 85, 85);
+  font-weight: bold;
 }
