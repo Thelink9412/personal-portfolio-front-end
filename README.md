@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # SubmissionForm
 
 A small React demo that shows a basic submission form component and how to handle user input without a page reload.
@@ -62,3 +63,7 @@ The optimized output will be in the `dist/` or `build/` folder depending on the 
 - If the form still reloads the page, verify that `handleSubmit` calls `event.preventDefault()`.
 - To persist or send submissions to a server, replace the console logging with a `fetch`/`axios` call.
 - Add client-side validation and unit tests (Jest + React Testing Library) for production readiness.
+=======
+# Portfolio-Front-end
+Front-end code for my portfolio web page
+>>>>>>> 17a7a459ef9a1b6c8cc133caad9d30fea2001ced
