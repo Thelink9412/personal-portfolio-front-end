@@ -5,8 +5,8 @@ function Home() {
     return (<div className='home' id='home'>
         <div className='presentation'>
             <div className='personal-info'>
-                <span className='hello-span'>Hello <b className='point'>.</b></span>
-                <span className='personal-name'><div className='line'></div>I'm Luca</span>
+                <span className='hello-span'>Hello <b className='point highlight'>.</b></span>
+                <span className='personal-name'><div className='line highlight'></div>I'm Luca</span>
                 <span className='personal-role'>Front-end Developer</span>
                 <section className='info-buttons'>
                     <button className='contact-me-btn'>Contact me</button>

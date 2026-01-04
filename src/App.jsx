@@ -1,15 +1,16 @@
-import { BrowserRouter, Link } from 'react-router-dom'
 import TopNavBar from './TopNavBar';
 import Home from './Home';
+import AboutMe from './AboutMe';
+import Projects from './Projects';
 
 function App() {
   return (
-    <BrowserRouter>
       <div className='app'>
         <TopNavBar />
         <Home />
+        <AboutMe />
+        <Projects />
       </div>
-    </BrowserRouter>
   );
 }
 
