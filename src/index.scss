@@ -3,20 +3,19 @@
   src: url(./assets/fonts/LeagueSpartan-Bold.otf);
 }
 
+@import "bootstrap/scss/functions";
+
+@import "bootstrap/scss/variables";
+
+@import "bootstrap/scss/mixins";
+
+@import "bootstrap/scss/maps";
+
+@import "bootstrap/scss/carousel";
+@import "bootstrap/scss/utilities"; 
+@import 'react-medium-image-zoom/dist/styles.css';
+
 :root {
-  font-family: spartan;
-  line-height: 1.5;
-  font-weight: 400;
-  min-height: 100vh;
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  overflow-x: hidden;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-
   --link-underline-padding: .5em;
   --personal-photo-dimensions: 38vw;
   --highlight-elements-color: rgba(203, 96, 80);
@@ -31,7 +30,20 @@ html{
 }
 
 body {
-  margin: 0;
+  font-family: spartan;
+  line-height: 1.5;
+  font-weight: 400;
+  min-height: 100vh;
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  overflow-x: hidden;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  margin: 0; 
   padding: 0;
   display: flex;
   place-items: center;
@@ -70,7 +82,6 @@ body {
 }
 
 .top-navbar h2 {
-  margin-top: 1.6em;
   font-family: spartan;
   font-size: 2em;
   line-height: 1.1;
@@ -81,6 +92,7 @@ body {
 
 .links{
   display: flex;
+  align-items: center;
   gap: 3em;
 }
 
@@ -104,11 +116,11 @@ body {
   width: 0;
 }
 
-.links li a:hover:after{
+.links li a:hover:after, .download-zip-link:hover:after{
   width: calc(100% + var(--link-underline-padding) * 2);
 }
 
-.home{
+.home, .about, .projects{
   scroll-margin-top: 4.8em;
   margin-top: 4.8em;
 }
@@ -166,7 +178,7 @@ body {
   margin: 2em 0 0 5.5em;
 }
 
-.info-buttons button{
+button{
   width: 10em;
   height: 4em;
   font-size: 1em;
@@ -299,15 +311,99 @@ p{
   margin: 20px 0 20px 20px;
 }
 
-.projects .database-project{
+.projects .database-project, .projects .ux-ui-project{
   display: flex;
 }
 
-.projects .database-project .project-description{
+.projects .project-description{
   width: 50%;
   height: 100%;
 }
 
 h4{
   display: flex;
+}
+
+.custom-carousel-container {
+  padding: 0 60px; 
+  position: relative;
+}
+
+.custom-carousel-container .carousel-control-prev {
+  left: -50px; 
+  width: 50px;
+}
+
+.custom-carousel-container .carousel-control-next {
+  right: -50px;
+  width: 50px;
+}
+
+.custom-carousel-container .carousel-indicators {
+  bottom: -40px; 
+}
+
+.custom-carousel-container .carousel-control-prev-icon,
+.custom-carousel-container .carousel-control-next-icon {
+  filter: none;
+  border-radius: 50%;
+  padding: 15px;
+}
+
+.visually-hidden{
+  display: none;
+}
+
+.internal-carousel {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+// .internal-carousel .carousel-inner {
+//     flex: 1;
+//     display: flex;
+//     align-items: stretch; 
+// }
+
+.internal-carousel .carousel-item.active {
+    min-height: 420px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.internal-carousel .carousel-indicators {
+    bottom: 60px; 
+    margin-bottom: 0;
+}
+
+[data-rmiz-modal-overlay="visible"] {
+    background-color: rgba(0, 0, 0, 0.9) !important;
+}
+
+.img-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.download-zip-link{
+  width: 10em;
+  display: block;
+  text-decoration: none;
+  color: var(--highlight-elements-color);
+}
+
+.download-zip-link:after{
+  background-color: var(--highlight-elements-color);
+  content: '';
+  display: block;
+  height: .1em;
+  margin-left: calc(var(--link-underline-padding) * -1);
+  margin-top: .2em;
+  transition: width .3s;
+  width: 0;
 }
