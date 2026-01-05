@@ -116,7 +116,7 @@ body {
   width: 0;
 }
 
-.links li a:hover:after, .download-zip-link:hover:after{
+.links li a:hover:after, .download-zip-link:hover:after, .figma-link:hover:after, .game-link:hover:after{
   width: calc(100% + var(--link-underline-padding) * 2);
 }
 
@@ -390,14 +390,24 @@ h4{
   justify-content: space-evenly;
 }
 
-.download-zip-link{
-  width: 10em;
+.download-zip-link, .figma-link, .game-link{
   display: block;
   text-decoration: none;
   color: var(--highlight-elements-color);
 }
 
-.download-zip-link:after{
+.figma-link{
+  width: 15em;
+  align-self: center;
+}
+
+.game-link{
+  width: 10em;
+  align-self: center;
+  margin-bottom: 30px;
+}
+
+.download-zip-link:after, .figma-link:after, .game-link:after{
   background-color: var(--highlight-elements-color);
   content: '';
   display: block;
@@ -406,4 +416,25 @@ h4{
   margin-top: .2em;
   transition: width .3s;
   width: 0;
+}
+
+.ux-ui-project{
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 40px;
+}
+
+.ux-ui-project section{
+  margin: 0 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.ux-ui-project .vertical-line{
+  height: 300px;
+}
+
+.game-project{
+  display: flex;
+  flex-direction: column;
 }

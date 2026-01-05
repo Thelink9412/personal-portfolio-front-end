@@ -1,5 +1,6 @@
 import { Carousel } from 'react-bootstrap'
 import DBScheme from './assets/images/db-scheme.png'
+import gameLogo from './assets/images/crystal-of-fate-logo.png'
 import Zoom from 'react-medium-image-zoom';
 
 function Projects() {
@@ -56,15 +57,29 @@ function Projects() {
                         <h3>UX/UI for app 'Ammuccamu!'</h3>
                         <div className='ux-ui-project'>
                             <section className='project-description col-md-6 text-white'>
-
-                                <div className='inner-carousel-container'>
-                                    <Carousel className='inner-carousel' controls={false} indicators={true}>
-                                        <Carousel.Item>
-                                            
-                                        </Carousel.Item>
-                                    </Carousel>
-                                </div>
+                                <h4>Overview</h4>
+                                <p>
+                                    Ammuccamu! is a food delivery application specifically designed to operate within the city of Catania. The platform focuses on local culinary traditions, allowing users to order territorial specialties such as typical sweets, fresh fish from the "Pescheria," and Catania's signature horse meat. To meet the needs of all parties involved, the app features three distinct navigation flows: one for customers, one for riders, and one for restaurateurs.
+                                </p>
                             </section>
+                            <div className='vertical-line'></div>
+                            <section className='project-description col-md-6 text-white'>
+                                <h4>Structure</h4>
+                                <p>
+                                    The structural phase was essential for defining the application's information architecture, distinguishing three primary flows for users, riders, and restaurant owners. Each flow was designed with unique sections and functionalities to ensure an optimized experience for every type of stakeholder involved.
+                                </p>
+                                <a href='https://www.figma.com/design/tqIX7PnnlDZMJ9WcvqOvHC/Wireframe-Ammuccamu-?t=TegjWShyEd2Fl1Vr-1' target='blank' className='figma-link'>Wireframes and Wireflow</a>
+                            </section>
+                        </div>
+                    </Carousel.Item>
+                    <Carousel.Item>
+                        <div className='game-project'>
+                            <img src={gameLogo} alt="Game Logo" style={{width: '100%', borderRadius: '15px'}}/>
+                            <h4>Overview</h4>
+                            <p>
+                                Crystal of Fate is a room-based Tower Defense focused on strategic positioning and resource management. Players must safeguard a central crystal by deploying defensive units across multiple rooms to intercept waves of randomly generated enemies. The game features a structured progression system across 4 distinct levels, each consisting of 4 tactical rounds, challenging players to adapt their strategy to unpredictable threats. Developed using <b>Unity Engine</b> and <b>C#</b>
+                            </p>
+                            <a href="https://thelink9412.itch.io/crystal-of-fate" target='blank' className='game-link'>Go to itch.io page</a>
                         </div>
                     </Carousel.Item>
                 </Carousel>
