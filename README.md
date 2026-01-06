@@ -1,69 +1,100 @@
-<<<<<<< HEAD
-# SubmissionForm
+# My Professional Portfolio
 
-A small React demo that shows a basic submission form component and how to handle user input without a page reload.
+A modern, responsive, and high-performance portfolio website built with **React**, **Vite**, and **Bootstrap**. This project showcases my skills in web development, database design, and game mechanics.
 
-## Overview
+---
 
-This project contains a minimal React application with a `Form` component that collects user input and handles form submission. The submitted data is currently logged to the browser console for demonstration and debugging.
+## Tech Stack
 
-The app is intended as an educational example: easy to read, extend, and integrate into a larger project.
+- **Frontend:** React.js (Vite)
+- **Styling:** SASS / SCSS, Bootstrap 5, Custom CSS
+- **Interactivity:** React Bootstrap, React-medium-image-zoom
+- **Email Service:** EmailJS (Integration for contact form)
+- **Deployment:** [Vercel/Netlify/GitHub Pages]
 
-## Features
+---
 
-- Simple controlled inputs
-- Submit handler using `event.preventDefault()` to avoid page reload
-- Easy to extend (validation, API integration, tests)
+## Project Structure
 
-## Requirements
+The project follows a modular component-based architecture:
 
-- Node.js (recommended >= 14)
-- npm or yarn
-
-## Installation
-
-Open a PowerShell terminal and run:
-
-```powershell
-cd "c:\Users\Pc\OneDrive\Desktop\JS Projects\React\SubmissionForm"
-npm install
+```text
+├── public/                 # Static assets (Downloads, ZIP files, Favicon)
+├── src/
+│   ├── assets/             # Global assets
+│   │   ├── fonts/          # Custom typography
+│   │   ├── images/         # Project screenshots and icons
+│   │   └── styles/         # SASS/CSS modules
+│   ├── components/         # Reusable React components
+│   │   ├── AboutMe/        # Information about me
+|   │   ├── App.jsx         # Main application entry point
+│   │   ├── ContactForm/    # Form logic with EmailJS
+│   │   ├── Contacts/       # Contact section layout
+│   │   ├── Footer/         # Social links and copyright
+│   │   ├── Home/           # Landing hero section
+│   │   ├── Projects/       # Main Projects container & Carousel
+│   │   │   └── projects/   # Individual project details
+│   │   │       ├── DBProject.jsx
+│   │   │       ├── GameProject.jsx
+│   │   │       └── UxUiProject.jsx
+│   │   └── TopNavBar/      # Navigation with scroll spying
+│   ├── global.css          # Global variables and resets
+│   └── main.jsx            # React DOM rendering
+├── .gitignore              # Files ignored by Git
+├── package.json            # Dependencies and scripts
+└── vite.config.js          # Vite configuration
 ```
 
-## Run (development)
+## Key Features
 
-```powershell
-npm run dev
-```
+### 1. Interactive Project Showcases
+- **E-commerce Database:** Detailed relational schema management with downloadable SQL assets. Focus on data integrity and business logic.
+- **Crystal of Fate (Game):** A room-based Tower Defense showcasing procedural enemy generation logic and strategic unit deployment.
+- **Internal Carousels:** Optimized UX using nested carousels with disabled autoplay to allow for comfortable technical reading.
 
-Open `http://localhost:5173` (Vite default) or the URL shown in the terminal.
+### 2. Advanced Technical Implementation
+- **Image Zooming:** Integrated `react-medium-image-zoom` to allow recruiters to inspect technical diagrams and database schemas in high resolution.
+- **Modular Styling:** Scalable CSS architecture using a mix of Global Styles and component-specific stylesheets for better maintainability.
+- **Dynamic Assets:** Strategic use of the `public` directory for secure and reliable binary file downloads (ZIP, PDF).
 
-If the project was scaffolded with Create React App, use:
+### 3. Contact Integration
+- **Direct Messaging:** Fully functional contact form powered by **EmailJS**.
+- **Automated Feedback:** Real-time UI feedback for message status (sending, success, error) and automated email replies.
 
-```powershell
-npm start
-```
+---
 
-## Build (production)
+## Getting Started
 
-```powershell
-npm run build
-```
+Follow these steps to run the project locally:
 
-The optimized output will be in the `dist/` or `build/` folder depending on the setup.
+1. **Clone the repository:**
+   ```bash
+   git clone [https://github.com/tuo-username/nome-repo.git](https://github.com/tuo-username/nome-repo.git)
+   ```
+2. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+3. **Set up Environment Variables:**
+    Create a `.env` file in the root directory to store your credentials securely.
+   ```text
+    VITE_EMAILJS_SERVICE_ID=your_service_id
+    VITE_EMAILJS_TEMPLATE_ID=your_template_id
+    VITE_EMAILJS_PUBLIC_KEY=your_public_key
+   ```
+4. **Run the development server**
+   ```bash
+   npm run dev
+   ```
+4. **Build for production:**
+   ```bash
+   npm run build
+   ```
 
-## Project Structure (key files)
+## Technical Insights
 
-- `src/Form.jsx` — the form component and submit logic
-- `src/App.jsx` — application root
-- `src/main.jsx` — app bootstrap
-- `index.html` / `public/` — static assets
+- **Vite Performance:** Chosen for its lightning-fast Hot Module Replacement (HMR) and optimized build process.
+- **Data Handling:** The database project ZIP is served from the `public` directory to ensure binary integrity during download.
+- **Component Lifecycle:** Used React `useRef` and `useState` hooks to manage EmailJS form states and UI feedback loops.
 
-## Notes & Tips
-
-- If the form still reloads the page, verify that `handleSubmit` calls `event.preventDefault()`.
-- To persist or send submissions to a server, replace the console logging with a `fetch`/`axios` call.
-- Add client-side validation and unit tests (Jest + React Testing Library) for production readiness.
-=======
-# Portfolio-Front-end
-Front-end code for my portfolio web page
->>>>>>> 17a7a459ef9a1b6c8cc133caad9d30fea2001ced
+- Developed with 💻 and ☕ by Luca

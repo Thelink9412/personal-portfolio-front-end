@@ -1,0 +1,109 @@
+@font-face {
+  font-family: spartan;
+  src: url(./assets/fonts/LeagueSpartan-Bold.otf);
+}
+
+:root {
+  --link-underline-padding: .5em;
+  --personal-photo-dimensions: 38vw;
+  --highlight-elements-color: rgba(203, 96, 80);
+}
+
+.app{
+  font-family: spartan;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: spartan;
+  line-height: 1.5;
+  font-weight: 400;
+  min-height: 100vh;
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  overflow-x: hidden;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  margin: 0; 
+  padding: 0;
+  display: flex;
+  place-items: center;
+  justify-content: center;
+  min-width: 320px;
+  min-height: 100vh;
+  color: rgb(255, 255, 255);
+  background-color: rgba(18, 28, 37);
+}
+
+.links li a:hover:after, 
+.hoverable-link:hover:after{
+  width: calc(100% + var(--link-underline-padding) * 2);
+}
+
+.home, .about, .projects{
+  scroll-margin-top: 5em;
+  margin-top: 5em;
+}
+
+button{
+  width: 10em;
+  height: 4em;
+  font-size: 1em;
+  font-family: sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.highlight{
+  color: var(--highlight-elements-color);
+}
+
+h4{
+  font-family: spartan;
+  display: flex;
+}
+
+p{
+  font-family: sans-serif;
+  line-height: 2em;
+}
+
+.horizontal-divider{
+  width: 90%;
+  height: 3px;
+  background-color: var(--highlight-elements-color);
+  border: none;
+}
+
+.vertical-line {
+  width: 4px;
+  height: 60px; 
+  background-color: var(--highlight-elements-color);
+}
+
+.hoverable-link{
+  display: block;
+  text-decoration: none;
+  color: var(--highlight-elements-color);
+  margin-top: .2em;
+}
+
+.hoverable-link:after{
+  background-color: var(--highlight-elements-color);
+  content: '';
+  display: block;
+  height: .1em;
+  margin-left: calc(var(--link-underline-padding) * -1);
+  margin-top: .2em;
+  transition: width .3s;
+  width: 0;
+}

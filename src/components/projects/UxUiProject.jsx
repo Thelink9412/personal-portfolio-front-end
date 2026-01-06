@@ -22,7 +22,7 @@ function UxUiProject() {
                     Each flow was designed with unique sections and functionalities to ensure an optimized experience 
                     for every type of stakeholder involved.
                 </p>
-                <a href='https://www.figma.com/design/tqIX7PnnlDZMJ9WcvqOvHC/Wireframe-Ammuccamu-?t=TegjWShyEd2Fl1Vr-1' target='blank' className='figma-link'>Wireframes and Wireflow</a>
+                <a href='https://www.figma.com/design/tqIX7PnnlDZMJ9WcvqOvHC/Wireframe-Ammuccamu-?t=TegjWShyEd2Fl1Vr-1' target='blank' className='figma-link hoverable-link'>Wireframes and Wireflow</a>
             </section>
         </div>
     )

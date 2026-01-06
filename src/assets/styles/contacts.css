@@ -1,0 +1,63 @@
+.contacts{
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 30px 0;
+}
+
+.contacts .contact-me-container{
+  display: flex;
+}
+
+.contacts .contact-me-container .contact-me-direct-links{
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 20px;
+}
+
+.contacts .contact-me-container .contact-me-direct-links span{
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.contact-form{
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  gap: 20px;
+}
+
+input, textarea{
+  outline: none;
+  border: none;
+  padding-left: 10px;
+  border-radius: 10px;
+  background-color: rgb(28, 44, 57);
+}
+
+input{
+  height: 2em;
+}
+
+textarea{
+  resize: none;
+  width: 100%;
+  height: 20em;   
+}
+
+input:focus, textarea:focus{
+  border: 2px solid var(--highlight-elements-color);
+}
+
+.submit-form-btn{
+  align-self: center;
+  background-color: var(--highlight-elements-color);
+}

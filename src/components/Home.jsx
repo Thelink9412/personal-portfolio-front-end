@@ -1,5 +1,5 @@
 import myPhoto from '../assets/images/my-photo.png'
-
+import '../assets/styles/presentation.css'
 function Home() {
 
     return (<div className='home' id='home'>
@@ -10,7 +10,7 @@ function Home() {
                 <span className='personal-role'>Front-end Developer</span>
                 <section className='info-buttons'>
                     <a href='#contacts'><button className='contact-me-btn'>Contact me</button></a>
-                    <button className='resume-btn'>My resume</button>
+                    <a href="downloads/resume.pdf" download='Luca Baudo Resume.pdf'><button className='resume-btn'>My resume</button></a>
                 </section>
             </div>
             <img src={myPhoto} alt="Personal Picture" />

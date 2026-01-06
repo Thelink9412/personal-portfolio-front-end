@@ -1,0 +1,120 @@
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/mixins";
+@import "bootstrap/scss/maps";
+@import "bootstrap/scss/carousel";
+@import "bootstrap/scss/utilities";
+
+@import 'react-medium-image-zoom/dist/styles.css';
+
+.projects{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.projects .projects-carousel{
+  margin: 20px 0;
+}
+
+.projects .database-project, .projects .ux-ui-project{
+  display: flex;
+}
+
+.projects .project-description{
+  width: 50%;
+  height: 100%;
+}
+
+.custom-carousel-container {
+  padding: 0 60px; 
+  position: relative;
+}
+
+.custom-carousel-container .carousel-control-prev {
+  left: -50px; 
+  width: 50px;
+}
+
+.custom-carousel-container .carousel-control-next {
+  right: -50px;
+  width: 50px;
+}
+
+.custom-carousel-container .carousel-indicators {
+  bottom: -40px; 
+}
+
+.custom-carousel-container .carousel-control-prev-icon,
+.custom-carousel-container .carousel-control-next-icon {
+  filter: none;
+  border-radius: 50%;
+  padding: 15px;
+}
+
+.visually-hidden{
+  display: none;
+}
+
+.internal-carousel {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.internal-carousel .carousel-item.active {
+    min-height: 420px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.internal-carousel .carousel-indicators {
+    bottom: 60px; 
+    margin-bottom: 0;
+}
+
+[data-rmiz-modal-overlay="visible"] {
+    background-color: rgba(0, 0, 0, 0.9) !important;
+}
+
+.img-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.figma-link{
+  width: 15em;
+  align-self: center;
+}
+
+.game-link{
+  width: 10em;
+  align-self: center;
+  margin-bottom: 30px;
+}
+
+.ux-ui-project{
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 40px;
+}
+
+.ux-ui-project section{
+  margin: 0 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.ux-ui-project .vertical-line{
+  height: 300px;
+}
+
+.game-project{
+  display: flex;
+  flex-direction: column;
+}

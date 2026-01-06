@@ -1,3 +1,4 @@
+import '../assets/styles/topbar.css'
 
 function TopNavBar() {
 

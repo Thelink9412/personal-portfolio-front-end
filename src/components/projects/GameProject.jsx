@@ -13,7 +13,7 @@ function GameProject() {
                 each consisting of 4 tactical rounds, challenging players to adapt their strategy to unpredictable threats. 
                 Developed using <b>Unity Engine</b> and <b>C#</b>
             </p>
-            <a href="https://thelink9412.itch.io/crystal-of-fate" target='blank' className='game-link'>Go to itch.io page</a>
+            <a href="https://thelink9412.itch.io/crystal-of-fate" target='blank' className='game-link hoverable-link'>Go to itch.io page</a>
         </div>
     )
 }

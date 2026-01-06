@@ -47,7 +47,7 @@ function DBProject() {
                         style={{ border: '2px solid var(--highlight-elements-color)', maxHeight: '300px', marginLeft: '30px' }}
                     />
                 </Zoom>
-                <a href='./assets/db-zip.zip' download='E-commerce Database.zip' className='download-zip-link'>Download zip file</a>
+                <a href='/downloads/db-zip.zip' download='E-commerce Database.zip' className='download-zip-link hoverable-link'>Download zip file</a>
             </div>
 
         </div>)

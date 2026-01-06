@@ -2,6 +2,7 @@ import { Carousel } from 'react-bootstrap'
 import DBProject from './projects/DBProject';
 import UxUiProject from './projects/UxUiProject';
 import GameProject from './projects/GameProject';
+import '../assets/styles/projects.scss'
 
 function Projects() {
 
