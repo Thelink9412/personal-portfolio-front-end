@@ -1,4 +1,4 @@
-import myPhoto from './assets/images/my-photo.png'
+import myPhoto from '../assets/images/my-photo.png'
 
 function Home() {
 
@@ -9,7 +9,7 @@ function Home() {
                 <span className='personal-name'><div className='line highlight'></div>I'm Luca</span>
                 <span className='personal-role'>Front-end Developer</span>
                 <section className='info-buttons'>
-                    <button className='contact-me-btn'>Contact me</button>
+                    <a href='#contacts'><button className='contact-me-btn'>Contact me</button></a>
                     <button className='resume-btn'>My resume</button>
                 </section>
             </div>

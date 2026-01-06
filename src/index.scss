@@ -79,6 +79,7 @@ body {
   height: 4em;
   padding: 1em 0;
   background-color: rgba(18, 28, 37);
+  z-index: 10;
 }
 
 .top-navbar h2 {
@@ -116,13 +117,19 @@ body {
   width: 0;
 }
 
-.links li a:hover:after, .download-zip-link:hover:after, .figma-link:hover:after, .game-link:hover:after{
+.links li a:hover:after, 
+.download-zip-link:hover:after, 
+.figma-link:hover:after, 
+.game-link:hover:after,
+.my-email-link:hover:after,
+.my-linkedin-link:hover:after,
+.github-link:hover:after{
   width: calc(100% + var(--link-underline-padding) * 2);
 }
 
 .home, .about, .projects{
-  scroll-margin-top: 4.8em;
-  margin-top: 4.8em;
+  scroll-margin-top: 5em;
+  margin-top: 5em;
 }
 
 .presentation{
@@ -198,13 +205,13 @@ button{
   background-color: rgb(28, 44, 57);
 }
 
-.info-buttons .contact-me-btn{
+.info-buttons .contact-me-btn, .submit-form-btn{
   background-color: var(--highlight-elements-color);
+  border: 2px solid rgb(137, 137, 137);
   color: rgb(40, 40, 40);
-  border: none;
 }
 
-.info-buttons .contact-me-btn:hover{
+.info-buttons .contact-me-btn:hover, .submit-form-btn:hover{
   background-color: rgb(206, 56, 56)
 }
 
@@ -308,7 +315,7 @@ p{
 }
 
 .projects .projects-carousel{
-  margin: 20px 0 20px 20px;
+  margin: 20px 0;
 }
 
 .projects .database-project, .projects .ux-ui-project{
@@ -360,12 +367,6 @@ h4{
     height: 100%;
 }
 
-// .internal-carousel .carousel-inner {
-//     flex: 1;
-//     display: flex;
-//     align-items: stretch; 
-// }
-
 .internal-carousel .carousel-item.active {
     min-height: 420px; 
     display: flex;
@@ -390,10 +391,16 @@ h4{
   justify-content: space-evenly;
 }
 
-.download-zip-link, .figma-link, .game-link{
+.download-zip-link, 
+.figma-link, 
+.game-link,
+.my-email-link,
+.my-linkedin-link,
+.github-link{
   display: block;
   text-decoration: none;
   color: var(--highlight-elements-color);
+  margin-top: .2em;
 }
 
 .figma-link{
@@ -407,7 +414,12 @@ h4{
   margin-bottom: 30px;
 }
 
-.download-zip-link:after, .figma-link:after, .game-link:after{
+.download-zip-link:after, 
+.figma-link:after, 
+.game-link:after,
+.my-email-link:after,
+.my-linkedin-link:after,
+.github-link:after{
   background-color: var(--highlight-elements-color);
   content: '';
   display: block;
@@ -437,4 +449,68 @@ h4{
 .game-project{
   display: flex;
   flex-direction: column;
+}
+
+.contacts{
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 30px 0;
+}
+
+.contacts .contact-me-container{
+  display: flex;
+}
+
+.contacts .contact-me-container .contact-me-direct-links{
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 20px;
+}
+
+.contacts .contact-me-container .contact-me-direct-links span{
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.contact-form{
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  gap: 20px;
+}
+
+input, textarea{
+  outline: none;
+  border: none;
+  padding-left: 10px;
+  border-radius: 10px;
+  background-color: rgb(28, 44, 57);
+}
+
+input{
+  height: 2em;
+}
+
+textarea{
+  resize: none;
+  width: 100%;
+  height: 20em;   
+}
+
+input:focus, textarea:focus{
+  border: 2px solid var(--highlight-elements-color);
+}
+
+.submit-form-btn{
+  align-self: center;
+  background-color: var(--highlight-elements-color);
 }

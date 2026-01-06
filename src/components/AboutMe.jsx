@@ -1,6 +1,6 @@
-import ux_ui_icon from './assets/images/ux-ui-icon.png'
-import spaIcon from './assets/images/spa-icon.png'
-import frontendIcon from './assets/images/frontend-icon.png'
+import ux_ui_icon from '../assets/images/ux-ui-icon.png'
+import spaIcon from '../assets/images/spa-icon.png'
+import frontendIcon from '../assets/images/frontend-icon.png'
 
 function AboutMe() {
 
