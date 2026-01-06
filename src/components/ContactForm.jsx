@@ -20,7 +20,6 @@ const ContactForm = () => {
                 setStatusMessage("Something went wrong. Please try again.");
             })
             .finally(() => {
-                alert(statusMessage)
                 setIsSending(false)
             });
     };
