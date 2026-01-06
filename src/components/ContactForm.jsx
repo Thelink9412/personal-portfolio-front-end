@@ -1,9 +1,6 @@
 import { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 
-const SERVICE_ID = 'service_huy7a4c'
-const TEMPLATE_ID = 'template_tjmue9c'
-const PUBLIC_KEY = '-8gObznF9OHYPdQQp'
 const ContactForm = () => {
     const form = useRef();
 
@@ -14,7 +11,7 @@ const ContactForm = () => {
         e.preventDefault();
         setIsSending(true);
 
-        emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, form.current, PUBLIC_KEY)
+        emailjs.sendForm(import.meta.env.VITE_EMAILJS_SERVICE_ID, import.meta.env.VITE_EMAILJS_TEMPLATE_ID, form.current, import.meta.env.VITE_EMAILJS_PUBLIC_KEY)
             .then(() => {
                 setStatusMessage("Message sent! I'll get back to you soon.");
                 form.current.reset();
