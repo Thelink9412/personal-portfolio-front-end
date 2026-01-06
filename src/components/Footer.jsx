@@ -12,7 +12,7 @@ function Footer() {
             }}>© 2024 Luca Baudo. All rights reserved.<br />
                 <i>Built with React, Bootstrap & ❤️</i></small>
             <a
-                href="https://github.com/Thelink9412/Portfolio-Front-end"
+                href="https://github.com/Thelink9412/personal-portfolio-front-end"
                 target="_blank"
                 rel="noreferrer"
                 className="source-code-link hoverable-link"
