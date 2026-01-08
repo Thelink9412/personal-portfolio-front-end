@@ -14,6 +14,10 @@
   .about .services{
     width: 80% !important;
   }
+
+  .about .about-me-section{
+    width: 80% !important;
+  }
 }
 
 .about .services{
@@ -64,4 +68,5 @@
 
 .about .about-me-section{
   width: 40%;
+  text-align: center;
 }
