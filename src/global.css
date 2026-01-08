@@ -14,6 +14,12 @@
   font-family: spartan;
 }
 
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+  position: relative;
+}
+
 html{
   scroll-behavior: smooth;
 }
