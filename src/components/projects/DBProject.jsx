@@ -43,7 +43,7 @@ function DBProject() {
                     <img
                         src={DBScheme}
                         alt="Database Schema"
-                        className="img-fluid rounded shadow cursor-zoom-in"
+                        className="cursor-zoom-in"
                         style={{ border: '2px solid var(--highlight-elements-color)', maxHeight: '300px', marginLeft: '30px' }}
                     />
                 </Zoom>

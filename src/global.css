@@ -85,7 +85,7 @@ p{
 }
 
 .horizontal-divider{
-  width: 90%;
+  width: 90vw;
   height: 3px;
   background-color: var(--highlight-elements-color);
   border: none;

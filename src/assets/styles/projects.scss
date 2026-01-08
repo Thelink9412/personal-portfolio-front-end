@@ -8,6 +8,7 @@
 @import 'react-medium-image-zoom/dist/styles.css';
 
 .projects{
+  width: 100vw;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -16,20 +17,57 @@
 
 .projects .projects-carousel{
   margin: 20px 0;
+  width: 100%;
 }
 
-.projects .database-project, .projects .ux-ui-project{
+.projects .database-project{
   display: flex;
 }
+
 
 .projects .project-description{
   width: 50%;
   height: 100%;
+  margin: 40px;
+}
+
+@media (max-width : 500px) {
+    .projects .database-project{
+      flex-direction: column;
+    }
+
+    .database-project .project-description{
+      width: 100% !important;
+      margin: 0;
+    }
+
+    .internal-carousel{
+      margin: 0 20px;
+    }
+
+    .img-container img{
+      width: 90vw;
+      margin: 0 !important;
+    }
+
+    .ux-ui-project{
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .ux-ui-project .project-description{
+      width: 90%;
+    }
+
+    .ux-ui-project .vertical-line{
+      display: none;
+    }
 }
 
 .custom-carousel-container {
   padding: 0 60px; 
   position: relative;
+  width: 100vw;
 }
 
 .custom-carousel-container .carousel-control-prev {
@@ -100,7 +138,8 @@
 
 .ux-ui-project{
   display: flex;
-  flex-direction: row;
+  width: 100%;
+  // flex-direction: row;
   margin-bottom: 40px;
 }
 
@@ -117,4 +156,22 @@
 .game-project{
   display: flex;
   flex-direction: column;
+  align-items: center;
+}
+
+.game-project h4{
+  align-self: flex-start;
+  margin-left: 40px;
+}
+
+.game-project .project-description{
+  width: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.game-project p{
+  width: 90%;
 }

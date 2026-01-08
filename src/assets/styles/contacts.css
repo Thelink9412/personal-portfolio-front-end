@@ -5,10 +5,20 @@
   align-items: center;
   justify-content: center;
   margin: 30px 0;
+  text-align: center;
 }
 
 .contacts .contact-me-container{
   display: flex;
+}
+
+@media (max-width : 500px) {
+  .contacts .contact-me-container{
+    width: 100vw;
+    flex-direction: column;
+    align-items: center;
+    gap: 4em;
+  }
 }
 
 .contacts .contact-me-container .contact-me-direct-links{
