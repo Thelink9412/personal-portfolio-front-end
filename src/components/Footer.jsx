@@ -12,7 +12,7 @@ function Footer() {
                 display: 'flex',
                 flexDirection: 'column',
                 alignItems: 'center'
-            }}>© 2024 Luca Baudo.{isMobile ? <br /> : ''} All rights reserved.<br />
+            }}>© 2025 Luca Baudo.{isMobile ? <br /> : ''} All rights reserved.<br />
                 <i>Built with React, Bootstrap & ❤️</i></small>
             <a
                 href="https://github.com/Thelink9412/personal-portfolio-front-end"
