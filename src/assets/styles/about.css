@@ -5,6 +5,13 @@
   align-items: center;
 }
 
+@media (max-width: 768px) {
+  .about{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+
 .about .services{
   display: flex;
   justify-content: space-evenly;

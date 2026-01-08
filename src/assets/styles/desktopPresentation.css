@@ -1,32 +1,32 @@
-.presentation{
+.desktop-presentation{
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.presentation .personal-info{
+.desktop-presentation .personal-info{
   display: flex;
   flex-direction: column;
 }
 
-.hello-span, .personal-role{
+.desktop-presentation .hello-span, .desktop-presentation .personal-role{
   font-size: 2em;
   margin-left: 3em;
 }
 
-.presentation span{
+.desktop-presentation span{
   display: block;
 }
 
-.presentation .personal-name{
+.desktop-presentation .personal-name{
   font-family: sans-serif;
   display: flex;
   font-size: 1.7em;
   margin: 1.2em 0;
 }
 
-.presentation .personal-name::before, .projects h4::before{
+.desktop-presentation .personal-name::before, .projects h4::before{
   background-color: var(--highlight-elements-color);
   align-self: flex-end;
   margin: 0 .3em 0.3em 0.3em;
@@ -35,13 +35,13 @@
   width: 6em;
 }
 
-.presentation img{
+.desktop-presentation img{
   width: var(--personal-photo-dimensions);
   height: calc(var(--personal-photo-dimensions) - 7vw);
   justify-self: end;
 }
 
-.info-buttons{
+.desktop-presentation .info-buttons{
   display: flex;
   justify-content: space-evenly;
   margin: 2em 0 0 5.5em;
@@ -66,7 +66,7 @@
   background-color: rgb(206, 56, 56)
 }
 
-.skills-list{
+.desktop-presentation .skills-list{
   font-family: sans-serif;
   width: 100vw;
   background-color: rgb(26, 41, 54);
