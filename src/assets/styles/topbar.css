@@ -50,13 +50,13 @@
 
 .mobile-menu{
   align-self: flex-start;
-  width: 30vw;
+  width: 50vw;
   height: 35vh;
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
   position: absolute;
-  right: calc(-30vw + (var(--mobile-menu-icon-dimensions) + 40px));
+  right: calc(-50vw + (var(--mobile-menu-icon-dimensions) + 40px));
   transition: all 0.2s ease-in-out;
 }
 
@@ -68,7 +68,7 @@
 }
 
 .mobile-menu.active{
-  transform: translateX(calc(-30vw + (var(--mobile-menu-icon-dimensions) - 5vw)));
+  transform: translateX(calc(-50vw + (var(--mobile-menu-icon-dimensions) + 40px)));
   background-color: rgba(18, 28, 37);
 }
 
