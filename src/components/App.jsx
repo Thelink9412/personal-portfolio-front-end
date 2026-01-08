@@ -9,7 +9,7 @@ import { useIsMobile } from '../isMobile';
 import MobilePresentation from './MobilePresentation';
 
 function App() {
-  const isMobile = useIsMobile(769);
+  const isMobile = useIsMobile(500);
 
   return (
     <div className='app'>

@@ -6,7 +6,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 100vw;
   height: 4em;
   padding: 1em 0;
   background-color: rgba(18, 28, 37);
@@ -56,7 +56,7 @@
   align-items: flex-start;
   justify-content: flex-start;
   position: absolute;
-  right: calc(-30vw + (var(--mobile-menu-icon-dimensions) + 20px));
+  right: calc(-30vw + (var(--mobile-menu-icon-dimensions) + 40px));
   transition: all 0.2s ease-in-out;
 }
 
@@ -68,7 +68,7 @@
 }
 
 .mobile-menu.active{
-  right: 0;
+  transform: translateX(calc(-30vw + (var(--mobile-menu-icon-dimensions) - 5vw)));
   background-color: rgba(18, 28, 37);
 }
 

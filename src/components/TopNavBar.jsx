@@ -3,7 +3,7 @@ import MobileMenu from './MobileMenu';
 import { useIsMobile } from '../isMobile';
 
 function TopNavBar() {
-    const isMobile = useIsMobile(768);
+    const isMobile = useIsMobile(500);
 
     return (<nav className='top-navbar'>
         <h2>Luca Baudo</h2>
