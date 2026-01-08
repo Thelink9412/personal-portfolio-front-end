@@ -7,7 +7,7 @@
 
 @import 'react-medium-image-zoom/dist/styles.css';
 
-.projects{
+.projects {
   width: 100vw;
   text-align: center;
   display: flex;
@@ -15,63 +15,75 @@
   align-items: center;
 }
 
-.projects .projects-carousel{
+.projects .projects-carousel {
   margin: 20px 0;
   width: 100%;
 }
 
-.projects .database-project{
+.projects .database-project {
   display: flex;
 }
 
 
-.projects .project-description{
+.projects .project-description {
   width: 50%;
   height: 100%;
   margin: 40px;
 }
 
 @media (max-width : 500px) {
-    .projects .database-project{
-      flex-direction: column;
-    }
+  .projects .database-project {
+    flex-direction: column;
+  }
 
-    .database-project .project-description{
-      width: 100% !important;
-      margin: 0;
-    }
+  .database-project .project-description {
+    width: 100% !important;
+    margin: 0 0 20px 0;
+  }
 
-    .internal-carousel{
-      margin: 0 20px;
-    }
+  .internal-carousel {
+    margin: 0 20px;
+    touch-action: pan-x;
+  }
 
-    .img-container img{
-      width: 90vw;
-      margin: 0 !important;
-    }
+  .internal-carousel .carousel-indicators {
+    bottom: 0 !important;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin-right: 15%;
+    margin-bottom: 1rem;
+    margin-left: 15%;
+  }
 
-    .ux-ui-project{
-      flex-direction: column;
-      align-items: center;
-    }
+  .img-container img {
+    width: 90vw;
+    margin: 0 !important;
+  }
 
-    .ux-ui-project .project-description{
-      width: 90%;
-    }
+  .ux-ui-project {
+    flex-direction: column;
+    align-items: center;
+  }
 
-    .ux-ui-project .vertical-line{
-      display: none;
-    }
+  .ux-ui-project .project-description {
+    width: 90%;
+  }
+
+  .ux-ui-project .vertical-line {
+    display: none;
+  }
 }
 
 .custom-carousel-container {
-  padding: 0 60px; 
+  padding: 0 60px;
   position: relative;
   width: 100vw;
 }
 
 .custom-carousel-container .carousel-control-prev {
-  left: -50px; 
+  left: -50px;
   width: 50px;
 }
 
@@ -81,7 +93,7 @@
 }
 
 .custom-carousel-container .carousel-indicators {
-  bottom: -40px; 
+  bottom: -40px;
 }
 
 .custom-carousel-container .carousel-control-prev-icon,
@@ -91,80 +103,80 @@
   padding: 15px;
 }
 
-.visually-hidden{
+.visually-hidden {
   display: none;
 }
 
 .internal-carousel {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .internal-carousel .carousel-item.active {
-    min-height: 420px; 
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
+  min-height: 420px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 
 .internal-carousel .carousel-indicators {
-    bottom: 60px; 
-    margin-bottom: 0;
+  bottom: 60px;
+  margin-bottom: 0;
 }
 
 [data-rmiz-modal-overlay="visible"] {
-    background-color: rgba(0, 0, 0, 0.9) !important;
+  background-color: rgba(0, 0, 0, 0.9) !important;
 }
 
-.img-container{
+.img-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
 }
 
-.figma-link{
+.figma-link {
   width: 15em;
   align-self: center;
 }
 
-.game-link{
+.game-link {
   width: 10em;
   align-self: center;
   margin-bottom: 30px;
 }
 
-.ux-ui-project{
+.ux-ui-project {
   display: flex;
   width: 100%;
   // flex-direction: row;
   margin-bottom: 40px;
 }
 
-.ux-ui-project section{
+.ux-ui-project section {
   margin: 0 20px;
   display: flex;
   flex-direction: column;
 }
 
-.ux-ui-project .vertical-line{
+.ux-ui-project .vertical-line {
   height: 300px;
 }
 
-.game-project{
+.game-project {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.game-project h4{
+.game-project h4 {
   align-self: flex-start;
   margin-left: 40px;
 }
 
-.game-project .project-description{
+.game-project .project-description {
   width: 100%;
   margin: 0;
   display: flex;
@@ -172,6 +184,6 @@
   align-items: center;
 }
 
-.game-project p{
+.game-project p {
   width: 90%;
 }

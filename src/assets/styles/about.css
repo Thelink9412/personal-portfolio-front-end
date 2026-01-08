@@ -10,6 +10,10 @@
     display: flex;
     flex-direction: column-reverse;
   }
+
+  .about .services{
+    width: 80% !important;
+  }
 }
 
 .about .services{

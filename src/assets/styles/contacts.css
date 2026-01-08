@@ -19,6 +19,10 @@
     align-items: center;
     gap: 4em;
   }
+
+  .contacts .contact-me-direct-links{
+    width: 80% !important;
+  }
 }
 
 .contacts .contact-me-container .contact-me-direct-links{
@@ -33,7 +37,7 @@
 .contacts .contact-me-container .contact-me-direct-links span{
   display: flex;
   align-items: center;
-  gap: 30px;
+  gap: 10px;
 }
 
 .contact-form{
