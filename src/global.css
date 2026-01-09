@@ -49,6 +49,12 @@ body {
   background-color: rgba(18, 28, 37);
 }
 
+.no-scroll {
+  overflow-y: hidden;
+  touch-action: none;
+  width: 100%;
+}
+
 .links li a:hover:after, 
 .hoverable-link:hover:after{
   width: calc(100% + var(--link-underline-padding) * 2);
