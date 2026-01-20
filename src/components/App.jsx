@@ -7,6 +7,7 @@ import Contacts from './Contacts';
 import Footer from './Footer';
 import { useIsMobile } from '../isMobile';
 import MobilePresentation from './MobilePresentation';
+import { Analytics } from '@vercel/analytics/react';
 
 function App() {
   const isMobile = useIsMobile(500);
@@ -21,6 +22,7 @@ function App() {
       <hr className='horizontal-divider' />
       <Contacts />
       <Footer />
+      <Analytics />
     </div>
   );
 }
